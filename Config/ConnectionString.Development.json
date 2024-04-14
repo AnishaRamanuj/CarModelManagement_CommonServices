@@ -1,0 +1,7 @@
+{
+  "ConnectionStrings": {
+    //"DefaultConnection": "data source=216.172.109.32;initial catalog=TunisNew;user id=sa;password=H1Tf$&r1x1T4;Persist Security Info=True"
+    "DefaultConnection": "data source=DESKTOP-C239HDD;initial catalog=TunisSyncV1;user id=dev;password=webashlar;Persist Security Info=True;"
+    //"DefaultConnection": "data source=216.172.109.32;initial catalog=TunisSyncV1;user id=devloper;password=qwe@123;Persist Security Info=True;"
+  }
+}

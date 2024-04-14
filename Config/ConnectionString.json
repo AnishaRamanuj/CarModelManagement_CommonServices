@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "data source=DESKTOP-5FGMTVV\\SQLEXPRESS;initial catalog=CarModel;Trusted_Connection=True;"
+  }
+}
