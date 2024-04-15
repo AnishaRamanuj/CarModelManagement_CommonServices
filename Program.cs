@@ -20,34 +20,6 @@ var jwtValidIssuer = configuration.GetSection("JWT:ValidIssuer").Get<string>();
 var jwtValidAudience = configuration.GetSection("JWT:ValidAudience").Get<string>();
 var jwtSecretKey = configuration.GetSection("JWT:SecretKey").Get<string>();
 
-
-// Host configuration
-//Host.CreateDefaultBuilder(args)
-//    .ConfigureWebHostDefaults(webBuilder =>
-//    {
-//        webBuilder.UseIIS();
-//        webBuilder.ConfigureAppConfiguration((hostingContext, config) =>
-//        {
-//            var env = hostingContext.HostingEnvironment;
-//            var ConfigPath = Path.Combine(env.ContentRootPath, "Config");
-
-//            config.AddJsonFile(Path.Combine(ConfigPath, "appsettings.json"), optional: true, reloadOnChange: true)
-//                .AddJsonFile(Path.Combine(ConfigPath, "ConnectionString.json"), optional: true, reloadOnChange: true);
-
-//            if (env.IsEnvironment("Development"))
-//            {
-//                config.AddJsonFile(Path.Combine(ConfigPath, $"appsettings.{env.EnvironmentName}.json"), optional: true, reloadOnChange: true)
-//                    .AddJsonFile(Path.Combine(ConfigPath, $"ConnectionString.{env.EnvironmentName}.json"), optional: true, reloadOnChange: true);
-//            }
-
-//            config.AddEnvironmentVariables();
-//        });
-//        webBuilder.ConfigureLogging(logging =>
-//        {
-//            logging.ClearProviders();
-//            logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
-//        });
-//    });
 builder.Services.AddAuthentication(opt =>
 {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
