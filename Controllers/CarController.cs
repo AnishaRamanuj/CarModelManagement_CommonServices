@@ -39,7 +39,7 @@ namespace CarModelManagement_CommonServices.API.Controllers
             return Ok(results);
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("UpdateCar")]
         public async Task<ActionResult<bool>> UpdateCar([FromBody] Cars car)
         {
@@ -49,7 +49,7 @@ namespace CarModelManagement_CommonServices.API.Controllers
 
         [HttpPost]
         [Route("DeleteCar")]
-        public async Task<ActionResult<int>> DeleteCar(Cars car)
+        public async Task<ActionResult<string>> DeleteCar([FromBody] int car)
         {
             var results = await _carServices.DeleteCar(car);
             return Ok(results);
